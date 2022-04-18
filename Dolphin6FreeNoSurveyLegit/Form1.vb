@@ -1,11 +1,17 @@
 ﻿Public Class Form1
     Dim r As New Random()
+    Dim myDate As Date = Date.Now
+    Dim someMonth As Integer = 4
+
     Private Sub Form1_FormClosing(ByVal sender As Object, ByVal e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
         e.Cancel = True
         FPopUpAds.Show()
     End Sub
 
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        If myDate.Month = someMonth Then
+            HappyEaster.ShowDialog()
+        End If
         My.Computer.Audio.Play(My.Resources.Welcome, AudioPlayMode.Background)
     End Sub
 
@@ -23,7 +29,7 @@
     End Sub
 
     Private Sub Form1_LocationChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.LocationChanged
-        If r.Next(1, 8) = 7 Then
+        If r.Next(1, 15) = 7 Then
             CataloniaOSPopUp.ShowDialog()
         End If
     End Sub
@@ -61,7 +67,11 @@
     End Sub
 
     Private Sub SearchToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SearchToolStripMenuItem.Click
-        Process.Start("shell:::{2559a1f8-21d7-11d4-bdaf-00c04f60b9f0}")
+        Try
+            Process.Start("shell:::{2559a1f8-21d7-11d4-bdaf-00c04f60b9f0}")
+        Catch ex As Exception
+            ErrorScreen.ShowDialog()
+        End Try
     End Sub
 
     Private Sub ConnectWiiWiiRemote1ToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ConnectWiiWiiRemote1ToolStripMenuItem.Click, ConnectWiiWiiRemote2ToolStripMenuItem.Click, ConnectWiiWiiRemote3ToolStripMenuItem.Click, ConnectWiiWiiRemote4ToolStripMenuItem.Click, ConnectBalanceBoardToolStripMenuItem.Click
@@ -122,5 +132,9 @@
 
     Private Sub InstallWADToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles InstallWADToolStripMenuItem.Click
         Explorer1.ShowDialog()
+    End Sub
+
+    Private Sub ToolStripTextBox1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ToolStripTextBox1.Click
+
     End Sub
 End Class

@@ -174,8 +174,9 @@ Partial Class Form1
         Me.CheckForUpdatesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.ToolStripTextBox1 = New System.Windows.Forms.ToolStripTextBox()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -274,61 +275,61 @@ Partial Class Form1
         'PlayToolStripMenuItem
         '
         Me.PlayToolStripMenuItem.Name = "PlayToolStripMenuItem"
-        Me.PlayToolStripMenuItem.Size = New System.Drawing.Size(165, 22)
+        Me.PlayToolStripMenuItem.Size = New System.Drawing.Size(167, 22)
         Me.PlayToolStripMenuItem.Text = "Play"
         '
         'ResetToolStripMenuItem
         '
         Me.ResetToolStripMenuItem.Enabled = False
         Me.ResetToolStripMenuItem.Name = "ResetToolStripMenuItem"
-        Me.ResetToolStripMenuItem.Size = New System.Drawing.Size(165, 22)
+        Me.ResetToolStripMenuItem.Size = New System.Drawing.Size(167, 22)
         Me.ResetToolStripMenuItem.Text = "Reset"
         '
         'ToggleFullscreenToolStripMenuItem
         '
         Me.ToggleFullscreenToolStripMenuItem.Enabled = False
         Me.ToggleFullscreenToolStripMenuItem.Name = "ToggleFullscreenToolStripMenuItem"
-        Me.ToggleFullscreenToolStripMenuItem.Size = New System.Drawing.Size(165, 22)
+        Me.ToggleFullscreenToolStripMenuItem.Size = New System.Drawing.Size(167, 22)
         Me.ToggleFullscreenToolStripMenuItem.Text = "Toggle Fullscreen"
         '
         'FrameAdvanceToolStripMenuItem
         '
         Me.FrameAdvanceToolStripMenuItem.Enabled = False
         Me.FrameAdvanceToolStripMenuItem.Name = "FrameAdvanceToolStripMenuItem"
-        Me.FrameAdvanceToolStripMenuItem.Size = New System.Drawing.Size(165, 22)
+        Me.FrameAdvanceToolStripMenuItem.Size = New System.Drawing.Size(167, 22)
         Me.FrameAdvanceToolStripMenuItem.Text = "Frame Advance"
         '
         'TakeScreenshotToolStripMenuItem
         '
         Me.TakeScreenshotToolStripMenuItem.Enabled = False
         Me.TakeScreenshotToolStripMenuItem.Name = "TakeScreenshotToolStripMenuItem"
-        Me.TakeScreenshotToolStripMenuItem.Size = New System.Drawing.Size(165, 22)
+        Me.TakeScreenshotToolStripMenuItem.Size = New System.Drawing.Size(167, 22)
         Me.TakeScreenshotToolStripMenuItem.Text = "Take Screenshot"
         '
         'ToolStripSeparator16
         '
         Me.ToolStripSeparator16.Name = "ToolStripSeparator16"
-        Me.ToolStripSeparator16.Size = New System.Drawing.Size(162, 6)
+        Me.ToolStripSeparator16.Size = New System.Drawing.Size(164, 6)
         '
         'LoadStateToolStripMenuItem
         '
         Me.LoadStateToolStripMenuItem.Enabled = False
         Me.LoadStateToolStripMenuItem.Name = "LoadStateToolStripMenuItem"
-        Me.LoadStateToolStripMenuItem.Size = New System.Drawing.Size(165, 22)
+        Me.LoadStateToolStripMenuItem.Size = New System.Drawing.Size(167, 22)
         Me.LoadStateToolStripMenuItem.Text = "Load State"
         '
         'SaveStateToolStripMenuItem
         '
         Me.SaveStateToolStripMenuItem.Enabled = False
         Me.SaveStateToolStripMenuItem.Name = "SaveStateToolStripMenuItem"
-        Me.SaveStateToolStripMenuItem.Size = New System.Drawing.Size(165, 22)
+        Me.SaveStateToolStripMenuItem.Size = New System.Drawing.Size(167, 22)
         Me.SaveStateToolStripMenuItem.Text = "Save State"
         '
         'SelectStateSlotToolStripMenuItem
         '
         Me.SelectStateSlotToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SelectSlot1EmptyToolStripMenuItem, Me.SelectSlot1EmptyToolStripMenuItem1, Me.SelectSlot1EmptyToolStripMenuItem2, Me.SelectSlot1EmptyToolStripMenuItem3, Me.SelectSlot1EmptyToolStripMenuItem4, Me.SelectSlot1EmptyToolStripMenuItem5, Me.SelectSlot1EmptyToolStripMenuItem6, Me.SelectSlot1EmptyToolStripMenuItem7, Me.SelectSlot1EmptyToolStripMenuItem8, Me.SelectSlot1EmptyToolStripMenuItem9})
         Me.SelectStateSlotToolStripMenuItem.Name = "SelectStateSlotToolStripMenuItem"
-        Me.SelectStateSlotToolStripMenuItem.Size = New System.Drawing.Size(165, 22)
+        Me.SelectStateSlotToolStripMenuItem.Size = New System.Drawing.Size(167, 22)
         Me.SelectStateSlotToolStripMenuItem.Text = "Select State Slot"
         '
         'SelectSlot1EmptyToolStripMenuItem
@@ -395,7 +396,7 @@ Partial Class Form1
         '
         'MovieToolStripMenuItem
         '
-        Me.MovieToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.StartRecordingInputToolStripMenuItem, Me.PlayInputRecordingToolStripMenuItem, Me.StopPlayingRecordingInputToolStripMenuItem, Me.ExportRecordingToolStripMenuItem, Me.ReadOnlyModeToolStripMenuItem, Me.TASInputToolStripMenuItem, Me.ToolStripSeparator14, Me.PauseAtEndOfMovieToolStripMenuItem, Me.ShowRerecordCounterToolStripMenuItem, Me.ShowLagCounterToolStripMenuItem, Me.ShowFrameCounterToolStripMenuItem, Me.ShowInputDisplayToolStripMenuItem, Me.ShowSystemClockToolStripMenuItem, Me.ToolStripSeparator15, Me.DumpFramesToolStripMenuItem, Me.DumpAudioToolStripMenuItem})
+        Me.MovieToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.StartRecordingInputToolStripMenuItem, Me.PlayInputRecordingToolStripMenuItem, Me.StopPlayingRecordingInputToolStripMenuItem, Me.ExportRecordingToolStripMenuItem, Me.ReadOnlyModeToolStripMenuItem, Me.TASInputToolStripMenuItem, Me.ToolStripSeparator14, Me.PauseAtEndOfMovieToolStripMenuItem, Me.ShowRerecordCounterToolStripMenuItem, Me.ShowLagCounterToolStripMenuItem, Me.ShowFrameCounterToolStripMenuItem, Me.ShowInputDisplayToolStripMenuItem, Me.ShowSystemClockToolStripMenuItem, Me.ToolStripSeparator15, Me.DumpFramesToolStripMenuItem, Me.DumpAudioToolStripMenuItem, Me.ToolStripTextBox1})
         Me.MovieToolStripMenuItem.Name = "MovieToolStripMenuItem"
         Me.MovieToolStripMenuItem.Size = New System.Drawing.Size(52, 20)
         Me.MovieToolStripMenuItem.Text = "Movie"
@@ -553,7 +554,7 @@ Partial Class Form1
         '
         Me.ToolsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ResourcePackManagerToolStripMenuItem, Me.CheatsManagerToolStripMenuItem, Me.FIFOPlayerToolStripMenuItem, Me.ToolStripSeparator8, Me.StartNetPlayToolStripMenuItem, Me.ToolStripMenuItem1, Me.ToolStripSeparator9, Me.LoadGameCubeMainMenuToolStripMenuItem, Me.MemoryCardManagerToolStripMenuItem, Me.ToolStripSeparator10, Me.LoadWiiSystemMenuToolStripMenuItem, Me.InstallWADToolStripMenuItem, Me.ManageNANDToolStripMenuItem, Me.PerformOnlineSystemUpdateToolStripMenuItem, Me.ToolStripSeparator11, Me.ImportWiiWiiSaveToolStripMenuItem, Me.ExportAllWiiWiiSavesToolStripMenuItem, Me.ToolStripSeparator12, Me.ConnectWiiRemotesToolStripMenuItem})
         Me.ToolsToolStripMenuItem.Name = "ToolsToolStripMenuItem"
-        Me.ToolsToolStripMenuItem.Size = New System.Drawing.Size(46, 20)
+        Me.ToolsToolStripMenuItem.Size = New System.Drawing.Size(48, 20)
         Me.ToolsToolStripMenuItem.Text = "Tools"
         '
         'ResourcePackManagerToolStripMenuItem
@@ -606,19 +607,19 @@ Partial Class Form1
         'NTSCJToolStripMenuItem
         '
         Me.NTSCJToolStripMenuItem.Name = "NTSCJToolStripMenuItem"
-        Me.NTSCJToolStripMenuItem.Size = New System.Drawing.Size(116, 22)
+        Me.NTSCJToolStripMenuItem.Size = New System.Drawing.Size(117, 22)
         Me.NTSCJToolStripMenuItem.Text = "NTSC-J"
         '
         'NTSCUToolStripMenuItem
         '
         Me.NTSCUToolStripMenuItem.Name = "NTSCUToolStripMenuItem"
-        Me.NTSCUToolStripMenuItem.Size = New System.Drawing.Size(116, 22)
+        Me.NTSCUToolStripMenuItem.Size = New System.Drawing.Size(117, 22)
         Me.NTSCUToolStripMenuItem.Text = "NTSC-U"
         '
         'PALToolStripMenuItem
         '
         Me.PALToolStripMenuItem.Name = "PALToolStripMenuItem"
-        Me.PALToolStripMenuItem.Size = New System.Drawing.Size(116, 22)
+        Me.PALToolStripMenuItem.Size = New System.Drawing.Size(117, 22)
         Me.PALToolStripMenuItem.Text = "PAL"
         '
         'MemoryCardManagerToolStripMenuItem
@@ -1147,6 +1148,11 @@ Partial Class Form1
         Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(195, 22)
         Me.AboutToolStripMenuItem.Text = "About"
         '
+        'Timer1
+        '
+        Me.Timer1.Enabled = True
+        Me.Timer1.Interval = 60000
+        '
         'PictureBox1
         '
         Me.PictureBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
@@ -1159,10 +1165,12 @@ Partial Class Form1
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
-        'Timer1
+        'ToolStripTextBox1
         '
-        Me.Timer1.Enabled = True
-        Me.Timer1.Interval = 60000
+        Me.ToolStripTextBox1.ForeColor = System.Drawing.Color.LightGray
+        Me.ToolStripTextBox1.Name = "ToolStripTextBox1"
+        Me.ToolStripTextBox1.Size = New System.Drawing.Size(100, 23)
+        Me.ToolStripTextBox1.Text = "Type Here"
         '
         'Form1
         '
@@ -1335,5 +1343,6 @@ Partial Class Form1
     Friend WithEvents ShowUnknownToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ShowWorldToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
+    Friend WithEvents ToolStripTextBox1 As System.Windows.Forms.ToolStripTextBox
 
 End Class
