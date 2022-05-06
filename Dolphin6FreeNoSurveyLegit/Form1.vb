@@ -35,7 +35,7 @@
     End Sub
 
     Private Sub OpenToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OpenToolStripMenuItem.Click, Label1.DoubleClick
-        Explorer1.ShowDialog()
+        Explorer1.Show()
     End Sub
 
     Private Sub DToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles DToolStripMenuItem.Click
@@ -83,7 +83,11 @@
     End Sub
 
     Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick
-        ErrorScreen.ShowDialog()
+        Try
+            ErrorScreen.ShowDialog()
+        Catch ex As Exception
+
+        End Try
     End Sub
 
     Private Sub FIFOPlayerToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles FIFOPlayerToolStripMenuItem.Click
@@ -136,5 +140,25 @@
 
     Private Sub ToolStripTextBox1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ToolStripTextBox1.Click
 
+    End Sub
+
+    Private Sub WebsiteToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles WebsiteToolStripMenuItem.Click
+        Process.Start("https://dolphin-emu.org")
+    End Sub
+
+    Private Sub OnlineDocumentationToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OnlineDocumentationToolStripMenuItem.Click
+        Process.Start("https://dolphin-emu.org/docs/guides/")
+    End Sub
+
+    Private Sub GitHubRepositoryToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles GitHubRepositoryToolStripMenuItem.Click
+        Process.Start("https://github.com/dolphin-emu/dolphin")
+    End Sub
+
+    Private Sub BugTrackerToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BugTrackerToolStripMenuItem.Click
+        Process.Start("https://bugs.dolphin-emu.org/projects/emulator")
+    End Sub
+
+    Private Sub CheckForUpdatesToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CheckForUpdatesToolStripMenuItem.Click
+        UpdateD.ShowDialog()
     End Sub
 End Class

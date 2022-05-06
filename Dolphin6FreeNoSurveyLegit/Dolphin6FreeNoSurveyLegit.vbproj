@@ -139,6 +139,12 @@
     <Compile Include="Resources\FPopUpAds.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Update.Designer.vb">
+      <DependentUpon>Update.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Update.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="CataloniaOSPopUp.resx">
@@ -170,6 +176,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\FPopUpAds.resx">
       <DependentUpon>FPopUpAds.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update.resx">
+      <DependentUpon>Update.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

@@ -73,6 +73,7 @@ Partial Class Form1
         Me.ToolStripSeparator15 = New System.Windows.Forms.ToolStripSeparator()
         Me.DumpFramesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.DumpAudioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripTextBox1 = New System.Windows.Forms.ToolStripTextBox()
         Me.OptionsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ConfigurationToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator13 = New System.Windows.Forms.ToolStripSeparator()
@@ -176,7 +177,6 @@ Partial Class Form1
         Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.ToolStripTextBox1 = New System.Windows.Forms.ToolStripTextBox()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -501,6 +501,13 @@ Partial Class Form1
         Me.DumpAudioToolStripMenuItem.Name = "DumpAudioToolStripMenuItem"
         Me.DumpAudioToolStripMenuItem.Size = New System.Drawing.Size(230, 22)
         Me.DumpAudioToolStripMenuItem.Text = "Dump Audio"
+        '
+        'ToolStripTextBox1
+        '
+        Me.ToolStripTextBox1.ForeColor = System.Drawing.Color.LightGray
+        Me.ToolStripTextBox1.Name = "ToolStripTextBox1"
+        Me.ToolStripTextBox1.Size = New System.Drawing.Size(100, 23)
+        Me.ToolStripTextBox1.Text = "Type Here"
         '
         'OptionsToolStripMenuItem
         '
@@ -1164,13 +1171,6 @@ Partial Class Form1
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
-        '
-        'ToolStripTextBox1
-        '
-        Me.ToolStripTextBox1.ForeColor = System.Drawing.Color.LightGray
-        Me.ToolStripTextBox1.Name = "ToolStripTextBox1"
-        Me.ToolStripTextBox1.Size = New System.Drawing.Size(100, 23)
-        Me.ToolStripTextBox1.Text = "Type Here"
         '
         'Form1
         '
